@@ -39,6 +39,7 @@ private:
 public:
 	static bool doneReading;
 	ADCRead();
+	ADCRead(int resolution);
 	int Read(int pin);
 	
 

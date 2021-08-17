@@ -38,6 +38,9 @@ bool ADCRead::doneReading = true;
 ADCRead::ADCRead() {
 
 }
+ADCRead::ADCRead(int resolution) {
+	analogReadResolution(resolution);
+}
 
 int ADCRead::Read(int pin) {
 	if (ADCRead::doneReading) { 
